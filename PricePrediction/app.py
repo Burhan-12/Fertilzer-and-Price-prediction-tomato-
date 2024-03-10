@@ -18,7 +18,8 @@ start_date = st.sidebar.date_input("Start Date", pd.to_datetime("2013-06-16"))
 end_date = st.sidebar.date_input("End Date", pd.to_datetime("2021-01-01"))
 
 # Load the trained ARIMA model
-arima_model = joblib.load('model (1).joblib')
+# arima_model = joblib.load('model (1).joblib')
+arima_model = joblib.load('PricePrediction/model (1).joblib')
 
 # Create a date range for forecasting
 forecast_dates = pd.date_range(start=end_date + pd.DateOffset(days=1), periods=300)
