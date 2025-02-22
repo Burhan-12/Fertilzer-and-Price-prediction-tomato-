@@ -4,7 +4,7 @@ from joblib import load
 from sklearn.preprocessing import LabelEncoder
 import datetime as dt
 import requests 
-
+#this is burhan
 # Load the saved model
 loaded_model = load('model (2).joblib')
 # Load the CSV file with additional information
